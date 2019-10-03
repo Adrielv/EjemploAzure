@@ -36,8 +36,13 @@ namespace EjemploAzure.Consulta
             {
                 case 0: //Todo
                     break;
-             
-            
+                case 1: //ID                  
+                    filtros = c => c.SugerenciasId == id && c.Fecha >= Desde && c.Fecha <= Hasta;
+                    break;
+                case 2: //Email
+                    filtros = c => c.Descripcion.Contains(CriterioTextBox.Text) && c.Fecha >= Desde && c.Fecha <= Hasta;
+                    break;
+
 
             }
             UsuarioGrid.DataSource = repositorio.GetList(filtros);
