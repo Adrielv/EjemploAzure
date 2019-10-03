@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consulta\cSugerencia.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -140,6 +141,13 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consulta\cSugerencia.aspx.cs">
+      <DependentUpon>cSugerencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consulta\cSugerencia.aspx.designer.cs">
+      <DependentUpon>cSugerencia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
